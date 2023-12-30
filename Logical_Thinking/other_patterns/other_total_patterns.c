@@ -40,6 +40,26 @@ void pattern_6(int num)
         printf("\n");
     }
 }
+
+void pattern_7(int num)
+{
+    for(i=1;i<=num;i++)
+    {
+        for(j=1;j<=num-i;j++)
+        {
+            printf("  ");
+        }
+        for(k=1;k<=i;k++)
+        {
+            printf("* ");
+        }
+        for(j=1;j<i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
 void main()
 {
     int num=5;
@@ -59,4 +79,9 @@ void main()
     printf("6.No pattern:\n");
     printf("\n");
     pattern_6(num);
+
+    printf("\n");
+    printf("7.No pattern:\n");
+    printf("\n");
+    pattern_7(num);
 }
