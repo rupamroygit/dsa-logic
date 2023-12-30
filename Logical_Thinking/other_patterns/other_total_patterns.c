@@ -75,11 +75,13 @@ void main()
     printf("\n");
     pattern_5(num);
 
+    //pattern 6 no
     printf("\n");
     printf("6.No pattern:\n");
     printf("\n");
     pattern_6(num);
 
+    //pattern no 7s
     printf("\n");
     printf("7.No pattern:\n");
     printf("\n");
