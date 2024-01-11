@@ -41,6 +41,7 @@ void pattern_6(int num)
     }
 }
 
+//pattern no 7
 void pattern_7(int num)
 {
     for(i=1;i<=num;i++)
@@ -60,6 +61,8 @@ void pattern_7(int num)
         printf("\n");
     }
 }
+
+//pattern no 7 differn apporach
 void pattern_7dif(int num)
 {
     for(i=1;i<=num;i++)
@@ -75,8 +78,38 @@ void pattern_7dif(int num)
         printf("\n");
     }
 }
+
+//pattern no 8
 void pattern_8(int num)
 {
+    for(i=1;i<=num;i++)
+    {
+        for(j=1;j<i;j++)
+        {
+            printf("  ");
+        }
+        for(j=2*num-1;j>=i*2-1;j--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+void pattern_9(int num)
+{
+    for(i=1;i<=num;i++)
+    {
+        for(j=1;j<=num-i;j++)
+        {
+            printf("  ");
+        }
+        for(j=1;j<=2*i-1;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
     for(i=1;i<=num;i++)
     {
         for(j=1;j<i;j++)
@@ -128,4 +161,10 @@ void main()
     printf("8.No pattern:\n");
     printf("\n");
     pattern_8(num);
+
+    //pattern no 9
+    printf("\n");
+    printf("9.No pattern:\n");
+    printf("\n");
+    pattern_9(num);
 }
