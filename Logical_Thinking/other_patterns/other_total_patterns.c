@@ -75,6 +75,21 @@ void pattern_7dif(int num)
         printf("\n");
     }
 }
+void pattern_8(int num)
+{
+    for(i=1;i<=num;i++)
+    {
+        for(j=1;j<i;j++)
+        {
+            printf("  ");
+        }
+        for(j=2*num-1;j>=i*2-1;j--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
 void main()
 {
     int num=5;
@@ -107,4 +122,10 @@ void main()
     printf("7.No pattern:\n");
     printf("\n");
     pattern_7dif(num);
+
+    //pattern No 8
+    printf("\n");
+    printf("8.No pattern:\n");
+    printf("\n");
+    pattern_8(num);
 }
