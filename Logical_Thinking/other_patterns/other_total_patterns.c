@@ -60,10 +60,25 @@ void pattern_7(int num)
         printf("\n");
     }
 }
+void pattern_7dif(int num)
+{
+    for(i=1;i<=num;i++)
+    {
+        for(j=1;j<=num-i;j++)
+        {
+            printf("  ");
+        }
+        for(j=1;j<=2*i-1;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
 void main()
 {
     int num=5;
-    //@pattern 4 no
+    // @pattern 4 no
     printf("\n");
     printf("4.No pattern:\n");
     printf("\n");
@@ -81,9 +96,15 @@ void main()
     printf("\n");
     pattern_6(num);
 
-    //pattern no 7s
+    //pattern no 7no
     printf("\n");
     printf("7.No pattern:\n");
     printf("\n");
     pattern_7(num);
+
+    //pattern mo 7 differn approach
+    printf("\n");
+    printf("7.No pattern:\n");
+    printf("\n");
+    pattern_7dif(num);
 }
