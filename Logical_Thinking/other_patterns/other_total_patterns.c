@@ -96,6 +96,7 @@ void pattern_8(int num)
     }
 }
 
+//pattern no 9
 void pattern_9(int num)
 {
     for(i=1;i<=num;i++)
@@ -117,6 +118,45 @@ void pattern_9(int num)
             printf("  ");
         }
         for(j=2*num-1;j>=i*2-1;j--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+//patern no 10
+void pattern_10(int num)
+{
+    for(i=1;i<=2*num-1;i++)
+    {
+        if(i<=num)
+        {
+            for(j=1;j<=i;j++)
+            {
+                printf("* ");
+            }
+        
+        }
+        else
+        {
+            for(j=1;j<=2*num-i;j++)
+            {
+                printf("* ");   
+            }
+        }
+        printf("\n");
+    }
+}
+
+//patern no 10
+void pattern_diff_10(int num)
+{
+    for(i=1;i<=2*num-1;i++)
+    {
+        int stars=i;
+        if(i>=num) stars=2*num-i;
+        for(j=1;j<=stars;j++)
         {
             printf("* ");
         }
@@ -167,4 +207,16 @@ void main()
     printf("9.No pattern:\n");
     printf("\n");
     pattern_9(num);
+
+    //pattern no 10
+    printf("\n");
+    printf("10.No pattern:\n");
+    printf("\n");
+    pattern_10(num);
+
+    //pattern no 10 differnt apporach
+    printf("\n");
+    printf("10.No pattern differnt apporach:\n");
+    printf("\n");
+    pattern_diff_10(num);
 }
