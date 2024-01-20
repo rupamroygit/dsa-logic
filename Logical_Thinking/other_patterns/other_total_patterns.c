@@ -163,6 +163,44 @@ void pattern_diff_10(int num)
         printf("\n");
     }
 }
+
+// pattern no 11
+void pattern_11(int num)
+{
+     for(i=0;i<num;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            if((i+j)%2==0){
+              //  printf("Even:%i",j);
+                printf("1 ");
+            }else{
+               // printf("Odd:%i",j);
+                printf("0 ");
+            }
+        }
+        printf("\n");
+    }
+}
+
+//pattern no 12
+void pattern_diff_11(int num)
+{   
+    int start=1;
+    for(i=0;i<num;i++)
+    {
+        if(i%2==0) start=1;
+        else start=0;
+        for(j=0;j<=i;j++)
+        {
+            printf("%d ",start);
+            start=1-start;
+        }
+        printf("\n");
+    }
+}
+
+
 void main()
 {
     int num=5;
@@ -219,4 +257,17 @@ void main()
     printf("10.No pattern differnt apporach:\n");
     printf("\n");
     pattern_diff_10(num);
+
+    //pattern no 11
+    printf("\n");
+    printf("11.No pattern:\n");
+    printf("\n");
+    pattern_11(num);
+
+    //pattern no 11 differnt apporach
+    printf("\n");
+    printf("11.No pattern differnt apporach:\n");
+    printf("\n");
+    pattern_diff_11(num);
+
 }

@@ -92,3 +92,19 @@ Patterns :
 * * *
 * *
 *
+
+11.No pattern:
+
+1
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1
+
+11.No pattern differnt apporach:
+
+1
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1
