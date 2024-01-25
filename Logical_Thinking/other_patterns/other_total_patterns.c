@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int i,j,k;
 
@@ -183,7 +184,7 @@ void pattern_11(int num)
     }
 }
 
-//pattern no 12
+//pattern no 11 different apporach
 void pattern_diff_11(int num)
 {   
     int start=1;
@@ -200,74 +201,166 @@ void pattern_diff_11(int num)
     }
 }
 
+//pattern no 12
+void pattern_12(int num)
+{
+    for(i=0;i<num;i++)
+    {
+        //number
+        for(j=0;j<=i;j++)
+        {
+            int nu=j;
+            nu++;
+            printf("%d ",nu);
+        }
+
+        //space
+        for(j=0;j<2*(num-i-1);j++)
+        {
+            printf("  ");
+        }
+
+        //number
+        for(j=i;j>=0;j--)
+        {   
+            int nu=j;
+            nu++;
+            printf("%d ",nu);
+        }
+        printf("\n");
+    }
+}
+
+void chose(int num,int input)
+{
+    switch (num)
+    {
+        case 0:
+        exit(0);
+        break;
+        case 4:
+        // @pattern 4 no
+        printf("\n");
+        printf("4.No pattern:\n");
+        printf("\n");
+        pattern_4(input);
+        break;
+        
+        case 5:
+        //patern 5 no
+        printf("\n");
+        printf("5.No pattern:\n");
+        printf("\n");
+        pattern_5(input);
+        break;
+        
+        case 6:
+        //pattern 6 no
+        printf("\n");
+        printf("6.No pattern:\n");
+        printf("\n");
+        pattern_6(input);
+        break;
+
+
+        case 7:
+        //pattern no 7no
+        printf("\n");
+        printf("7.No pattern:\n");
+        printf("\n");
+        pattern_7(input);
+
+        //pattern mo 7 differn approach
+        printf("\n");
+        printf("7.No pattern:\n");
+        printf("\n");
+        pattern_7dif(input);
+        break;
+
+        case 8:
+        //pattern No 8
+        printf("\n");
+        printf("8.No pattern:\n");
+        printf("\n");
+        pattern_8(input);
+        break;
+
+        case 9:
+        //pattern no 9
+        printf("\n");
+        printf("9.No pattern:\n");
+        printf("\n");
+        pattern_9(input);
+        break;
+
+        case 10:
+        //pattern no 10
+        printf("\n");
+        printf("10.No pattern:\n");
+        printf("\n");
+        pattern_10(input);
+
+        //pattern no 10 differnt apporach
+        printf("\n");
+        printf("10.No pattern differnt apporach:\n");
+        printf("\n");
+        pattern_diff_10(input);
+        break;
+
+        case 11:
+        //pattern no 11
+        printf("\n");
+        printf("11.No pattern:\n");
+        printf("\n");
+        pattern_11(input);
+
+        //pattern no 11 differnt apporach
+        printf("\n");
+        printf("11.No pattern differnt apporach:\n");
+        printf("\n");
+        pattern_diff_11(input);
+        break;
+
+        case 12:
+        //pattern no 12
+        printf("\n");
+        printf("12.No pattern:\n");
+        printf("\n");
+        pattern_12(input);
+        break;
+
+        default:
+        printf("*Invalid Input*\n");
+        break;
+    }
+}
+
+void print()
+{
+
+    printf("\n**---**--**\n");
+    printf("For print pattern 4 press 4\n");
+    printf("For print pattern 5 press 5\n");
+    printf("For print pattern 6 press 6\n");
+    printf("For print pattern 7 press 7\n");
+    printf("For print pattern 8 press 8\n");
+    printf("For print pattern 9 press 9\n");
+    printf("For print pattern 10 press 10\n");
+    printf("For print pattern 11 press 11\n");
+    printf("For print pattern 12 press 12\n");
+    printf("EXit Enter: 0\n");
+    printf("**---**--**\n");
+    printf(": ");
+}
 
 void main()
 {
-    int num=5;
-    // @pattern 4 no
-    printf("\n");
-    printf("4.No pattern:\n");
-    printf("\n");
-    pattern_4(num);
-
-    //patern 5 no
-    printf("\n");
-    printf("5.No pattern:\n");
-    printf("\n");
-    pattern_5(num);
-
-    //pattern 6 no
-    printf("\n");
-    printf("6.No pattern:\n");
-    printf("\n");
-    pattern_6(num);
-
-    //pattern no 7no
-    printf("\n");
-    printf("7.No pattern:\n");
-    printf("\n");
-    pattern_7(num);
-
-    //pattern mo 7 differn approach
-    printf("\n");
-    printf("7.No pattern:\n");
-    printf("\n");
-    pattern_7dif(num);
-
-    //pattern No 8
-    printf("\n");
-    printf("8.No pattern:\n");
-    printf("\n");
-    pattern_8(num);
-
-    //pattern no 9
-    printf("\n");
-    printf("9.No pattern:\n");
-    printf("\n");
-    pattern_9(num);
-
-    //pattern no 10
-    printf("\n");
-    printf("10.No pattern:\n");
-    printf("\n");
-    pattern_10(num);
-
-    //pattern no 10 differnt apporach
-    printf("\n");
-    printf("10.No pattern differnt apporach:\n");
-    printf("\n");
-    pattern_diff_10(num);
-
-    //pattern no 11
-    printf("\n");
-    printf("11.No pattern:\n");
-    printf("\n");
-    pattern_11(num);
-
-    //pattern no 11 differnt apporach
-    printf("\n");
-    printf("11.No pattern differnt apporach:\n");
-    printf("\n");
-    pattern_diff_11(num);
-
+    int num;
+    while(1)
+    {
+        print();
+        scanf("%d",&num);
+        chose(num,4);
+    }
+    
 }
