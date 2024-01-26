@@ -231,6 +231,37 @@ void pattern_12(int num)
     }
 }
 
+void pattern_diff_12(int num)
+{
+    int space=2*(num-1);
+
+    for(i=1;i<=num;i++)
+    {
+        //number
+        for(j=1;j<=i;j++)
+        {
+            printf("%d ",j);
+        }
+
+        //space
+        for(j=1;j<=space;j++)
+        {
+            printf("  ");
+        }
+
+        //number
+        for(j=i;j>=1;j--)
+        {
+            printf("%d ",j);
+        }
+
+        //next line
+        printf("\n");
+
+        space-=2;
+    }
+}
+
 void chose(int num,int input)
 {
     switch (num)
@@ -327,6 +358,12 @@ void chose(int num,int input)
         printf("12.No pattern:\n");
         printf("\n");
         pattern_12(input);
+
+        //pattern no 12 different apporach
+        printf("\n");
+        printf("12.No pattern different apporach:\n");
+        printf("\n");
+        pattern_diff_12(input);
         break;
 
         default:
