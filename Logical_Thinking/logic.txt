@@ -138,3 +138,11 @@ A B C D
 A B C
 A B
 A
+
+16.No pattern:
+
+A 
+B B 
+C C C 
+D D D D 
+E E E E E

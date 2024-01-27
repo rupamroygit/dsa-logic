@@ -303,6 +303,20 @@ void pattern_15(int num)
         printf("\n");
     }
 }
+//pattern no 16
+void pattern_16(int num)
+{
+    int var=65;
+    for(i=0;i<num;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            printf("%c ",var);
+        }
+        var++;
+        printf("\n");
+    }
+}
 
 void chose(int num,int input)
 {
@@ -432,6 +446,14 @@ void chose(int num,int input)
         pattern_15(input);
         break;
 
+        case 16:
+        //pattern no 16
+        printf("\n");
+        printf("16.No pattern:\n");
+        printf("\n");
+        pattern_16(input);
+        break;
+
         default:
         printf("*Invalid Input*\n");
         break;
@@ -454,7 +476,7 @@ void print()
     printf("For print pattern 13 press 13\n");
     printf("For print pattern 14 press 14\n");
     printf("For print pattern 15 press 15\n");
-    // printf("For print pattern 16 press 16\n");
+    printf("For print pattern 16 press 16\n");
     // printf("For print pattern 17 press 17\n");
     // printf("For print pattern 18S press 18\n");
     printf("EXit Enter: 0\n");
