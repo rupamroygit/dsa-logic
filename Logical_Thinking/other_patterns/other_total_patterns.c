@@ -230,7 +230,7 @@ void pattern_12(int num)
         printf("\n");
     }
 }
-
+//pattern no 12 different apporach
 void pattern_diff_12(int num)
 {
     int space=2*(num-1);
@@ -261,6 +261,35 @@ void pattern_diff_12(int num)
         space-=2;
     }
 }
+//pattern no 13
+void pattern_13(int num)
+{
+    int var=1;
+    for(i=0;i<num;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            printf("%i ",var);
+            var++;
+        }
+        printf("\n");
+    }
+}
+//pattern no 14
+void pattern_14(int num)
+{
+    for(i=0;i<num;i++)
+    {
+        int var=65;
+        for(j=0;j<=i;j++)
+        {
+            printf("%c ",var);
+            var++;
+        }   
+        printf("\n");
+    }
+}
+
 
 void chose(int num,int input)
 {
@@ -366,6 +395,23 @@ void chose(int num,int input)
         pattern_diff_12(input);
         break;
 
+        case 13:
+        //pattern no 13
+        printf("\n");
+        printf("13.No pattern:\n");
+        printf("\n");
+        pattern_13(input);
+        break;
+
+        case 14:
+        //pattern no 14
+        printf("\n");
+        printf("14.No pattern:\n");
+        printf("\n");
+        pattern_14(input);
+        break;
+
+
         default:
         printf("*Invalid Input*\n");
         break;
@@ -385,6 +431,8 @@ void print()
     printf("For print pattern 10 press 10\n");
     printf("For print pattern 11 press 11\n");
     printf("For print pattern 12 press 12\n");
+    printf("For print pattern 13 press 13\n");
+    printf("For print pattern 14 press 14\n");
     printf("EXit Enter: 0\n");
     printf("**---**--**\n");
     printf(": ");
@@ -397,7 +445,7 @@ void main()
     {
         print();
         scanf("%d",&num);
-        chose(num,4);
+        chose(num,5);
     }
     
 }
