@@ -358,6 +358,50 @@ void pattern_18(int num)
         printf("\n");
     }
 }
+//pattern no 19
+void pattern_19(int num)
+{
+    //upper
+    for(i=0;i<num;i++)
+    {
+        //stare
+        for(j=0;j<num-i;j++)
+        {
+            printf("* ");
+        }
+        //space
+        for(j=0;j<2*i;j++)
+        {
+            printf("  ");
+        }
+        //stare
+        for(j=0;j<num-i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    //lower
+    for(i=0;i<num;i++)
+    {
+        //stare
+        for(j=0;j<=i;j++)
+        {
+            printf("* ");
+        }
+        //space
+        for(j=0;j<2*(num-1-i);j++)
+        {
+            printf("  ");
+        }
+        //stare
+        for(j=0;j<=i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
 
 void chose(int num,int input)
 {
@@ -511,6 +555,14 @@ void chose(int num,int input)
         pattern_18(input);
         break;
 
+        case 19:
+        //pattern no 19
+        printf("\n");
+        printf("19.No pattern:\n");
+        printf("\n");
+        pattern_19(input);
+        break;
+
         default:
         printf("*Invalid Input*\n");
         break;
@@ -536,7 +588,7 @@ void print()
     printf("For print pattern 16 press 16\n");
     printf("For print pattern 17 press 17\n");
     printf("For print pattern 18 press 18\n");
-    // printf("For print pattern 19 press 19\n");
+    printf("For print pattern 19 press 19\n");
     // printf("For print pattern 20 press 20\n");
     // printf("For print pattern 21 press 21\n");
     // printf("For print pattern 22 press 22\n");
