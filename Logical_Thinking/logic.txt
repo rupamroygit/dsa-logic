@@ -154,3 +154,11 @@ E E E E E
       A B C B A
     A B C D C B A
   A B C D E D C B A
+
+18.No pattern:
+
+E
+D E
+C D E
+B C D E
+A B C D E

@@ -339,6 +339,25 @@ void pattern_17(int num)
         printf("\n");
     }
 }
+//patten no 18
+void pattern_18(int num)
+{    
+    for(i=0;i<num;i++)
+    {
+        //here decelare character
+        char var='A';
+        /*here uppear char and 
+        each time decrease the value util the value
+        is equale to var*/
+        char upper=(var+num-1)-i;
+        for(j=0;j<=i;j++)
+        {
+            printf("%c ",upper);
+            upper++;
+        }
+        printf("\n");
+    }
+}
 
 void chose(int num,int input)
 {
@@ -484,6 +503,14 @@ void chose(int num,int input)
         pattern_17(input);
         break;
 
+        case 18:
+        //pattern no 18
+        printf("\n");
+        printf("18.No pattern:\n");
+        printf("\n");
+        pattern_18(input);
+        break;
+
         default:
         printf("*Invalid Input*\n");
         break;
@@ -508,8 +535,12 @@ void print()
     printf("For print pattern 15 press 15\n");
     printf("For print pattern 16 press 16\n");
     printf("For print pattern 17 press 17\n");
-    // printf("For print pattern 18S press 18\n");
-    printf("EXit Enter: 0\n");
+    printf("For print pattern 18 press 18\n");
+    // printf("For print pattern 19 press 19\n");
+    // printf("For print pattern 20 press 20\n");
+    // printf("For print pattern 21 press 21\n");
+    // printf("For print pattern 22 press 22\n");
+    printf("EXIT Enter: 0\n");
     printf("**---**--**\n");
     printf(": ");
 }
