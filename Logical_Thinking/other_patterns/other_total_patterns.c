@@ -402,6 +402,50 @@ void pattern_19(int num)
         printf("\n");
     }
 }
+//pattern no 20
+void pattern_20(int num)
+{
+    //upper part
+    for(i=0;i<num;i++)
+    {
+        //stare
+        for(j=0;j<=i;j++)
+        {
+            printf("* ");
+        }
+        //space
+        for(j=0;j<2*(num-1-i);j++)
+        {
+            printf("  ");
+        }
+        //stare
+        for(j=0;j<=i;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    //lower part
+    for(i=0;i<num-1;i++)
+    {
+        //stare
+        for(j=0;j<num-i-1;j++)
+        {
+            printf("* ");
+        }
+        //space
+        for(j=0;j<2*i+2;j++)
+        {
+            printf("  ");
+        }
+        //stare
+        for(j=0;j<num-i-1;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
 
 void chose(int num,int input)
 {
@@ -563,6 +607,14 @@ void chose(int num,int input)
         pattern_19(input);
         break;
 
+        case 20:
+        //pattern no 20
+        printf("\n");
+        printf("20.No pattern:\n");
+        printf("\n");
+        pattern_20(input);
+        break;
+
         default:
         printf("*Invalid Input*\n");
         break;
@@ -589,7 +641,7 @@ void print()
     printf("For print pattern 17 press 17\n");
     printf("For print pattern 18 press 18\n");
     printf("For print pattern 19 press 19\n");
-    // printf("For print pattern 20 press 20\n");
+    printf("For print pattern 20 press 20\n");
     // printf("For print pattern 21 press 21\n");
     // printf("For print pattern 22 press 22\n");
     printf("EXIT Enter: 0\n");
