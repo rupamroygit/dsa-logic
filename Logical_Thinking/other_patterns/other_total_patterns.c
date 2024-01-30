@@ -481,7 +481,25 @@ void pattern_diff_20(int num)
        
     }
 }
-
+//pattern no 21
+void pattern_21(int num)
+{
+    for(i=0;i<num;i++)
+    {
+        for(j=0;j<num;j++)
+        {
+            if(j==0 || j==num-1 || i==0 || i==num-1 )
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+}
 
 void chose(int num,int input)
 {
@@ -657,6 +675,14 @@ void chose(int num,int input)
         pattern_diff_20(input);
         break;
 
+        case 21:
+        //pattern no 21
+        printf("\n");
+        printf("21.No pattern:\n");
+        printf("\n");
+        pattern_21(input);
+        break;
+
         default:
         printf("*Invalid Input*\n");
         break;
@@ -684,7 +710,7 @@ void print()
     printf("For print pattern 18 press 18\n");
     printf("For print pattern 19 press 19\n");
     printf("For print pattern 20 press 20\n");
-    // printf("For print pattern 21 press 21\n");
+    printf("For print pattern 21 press 21\n");
     // printf("For print pattern 22 press 22\n");
     printf("EXIT Enter: 0\n");
     printf("**---**--**\n");
