@@ -446,6 +446,42 @@ void pattern_20(int num)
         printf("\n");
     }
 }
+//pattern no 20 different approach
+void pattern_diff_20(int num)
+{
+    int space=2*num,stare;
+    for(i=0;i<2*num-1;i++)
+    {
+        if(i<num)
+        { 
+            stare=i;
+            space-=2;
+        }
+         if(i>=num)
+        {
+            stare-=1;
+            space+=2;
+        }
+        //stare
+        for(j=0;j<=stare;j++)
+        {
+            printf("* ");
+        }
+        //space
+        for(j=0;j<space;j++)
+        {
+            printf("  ");
+        }
+        //stare
+        for(j=0;j<=stare;j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+       
+    }
+}
+
 
 void chose(int num,int input)
 {
@@ -613,6 +649,12 @@ void chose(int num,int input)
         printf("20.No pattern:\n");
         printf("\n");
         pattern_20(input);
+
+        //pattern no 20 different apporach
+        printf("\n");
+        printf("20.No pattern different apporach:\n");
+        printf("\n");
+        pattern_diff_20(input);
         break;
 
         default:
